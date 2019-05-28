@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Butler';
+    src: url('Butler-Medium.woff2') format('woff2'),
+        url('Butler-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.test
+{
+    border: 1px solid black;
+}
+
+
+
+#wrapCv
+{
+    margin-top: 0px;
+    padding-top: 0px;
+    border-left: 15px solid purple;
+    border-right: 15px solid purple;
+}
+#header
+{
+    margin-bottom: 65px;
+    padding: 12px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#name
+{
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px cornflowerblue;
+    font-family: Butler, sans-serif;
+    margin-top: 5%;
+}
+.subtitle
+{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 1.3em;
+    text-align: center;
+}
+#quote
+{
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+#me
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    box-shadow: 6px 6px 1px 0.5px rgba(0, 0, 255, .2);
+
+}
+#phone
+{
+    font-family: monospace;
+}
+.lisere
+{
+    background: purple;
+}
+.addressElts
+{
+    position: relative;
+    left: 0px;
+}
+.contactIcon
+{
+    max-height: 50px;
+    max-width: 50px;
+}
+.contactLinks
+{
+    font-family: serif;
+    text-decoration: none;
+    color: purple;
+}
+.contactLinks:hover
+{
+    font-style: italic;
+}
+
+.address
+{
+    text-align: center;
+    margin-top: 5px;
+    color: purple;
+}
+
+
+
+h4
+{
+    font-family: serif;
+    font-weight: 550;
+    margin-top: 15px;
+    
+}
+
+.abilty
+{
+    list-style: lower-roman url('lvlUp.png') outside;
+    font-family: monospace;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.workElts
+{    
+    list-style: lower-roman url('work.png') outside;
+    font-family: monospace;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.plusElts
+{    
+    list-style: lower-roman url('plus.png') outside;
+    font-family: monospace;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.dates
+{
+    font-family: serif;
+    font-size: 15px;
+}
+
+
+
+/* CARRYING SOME ANIMATIONS */
+
+
+ @keyframes anime1{
+  0%   {top:-200px;}
+
+  100%  {top:0px;}
+  
+}
+
+/* The element to apply the animation to */
+#me{
+  position: relative;
+  animation-name: anime1;
+  animation-duration: 3s;
+   
+} 
+
+ @keyframes anime2{
+  0%   {left:600px;}
+  100%  {left:0px;}
+  
+}
+
+
+.addressElts{
+  position: relative;
+  animation-name: anime2;
+  animation-duration: 3s;
+
+} 
+
+img:hover
+{
+    transform: rotate(180deg);
+}
+
+
+
+
+ @keyframes anime3{
+  0%   {top:-150px;}
+  35%  {top:100%; left: 20%}     
+  100%  {top:70%;left: 10%}
+  
+}
+
+ @keyframes anime4{
+  0%   {top:-150px;}
+  55%  {top:100%;left: 25%}     
+  100%  {top:35%;left: 5%}
+  
+}
+
+@keyframes anime5{
+  0%   {top:-150px;}
+  15%  {top:100%;left: 5%}    
+  100%  {top:90%;left: 10%}
+  
+}
+
+@keyframes anime6{
+  0%   {top:-150px;}
+  75%  {top:100%;left: 15%}
+  100%  {top:15%;left: 3%}
+  
+}
+
+@keyframes anime7{
+  0%   {top:-150px;}
+  90%  {top:100%;left: 10%}    
+  100%  {top:80%;left: 3%}
+  
+}
+
+
+.bubbles
+{
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.6); 
+    -moz-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+    -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.6); 
+}
+
+#bubble
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: purple;
+    position: fixed;
+    top: 70%;
+    left: 10%;
+    animation-name: anime3;
+    animation-duration: 3s;
+
+    
+}
+
+#bubble2
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: red;
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    animation-name: anime4;
+    animation-duration: 3s;
+
+    
+}
+
+
+
+#bubble3
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: hotpink;
+    position: fixed;
+    top: 90%;
+    left: 10%;
+    animation-name: anime5;
+    animation-duration: 3s;
+
+    
+}
+
+#bubble4
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: goldenrod;
+    position: fixed;
+    top: 15%;
+    left: 3%;
+    animation-name: anime6;
+    animation-duration: 3s;
+
+    
+}
+
+#bubble5
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: orange;
+    position: fixed;
+    top: 80%;
+    left: 3%;
+    animation-name: anime7;
+    animation-duration: 3s;
+
+    
+}
