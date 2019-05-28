@@ -1,2 +1,3 @@
 # My-Cv
-Just my cv.
+
+<p> My cv in html, an exercice from becode formation </p>
